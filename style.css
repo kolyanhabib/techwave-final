@@ -361,6 +361,72 @@ header {
   color: #19ff7a;
   font-weight: 500;
 }
+
+/* =================Host Section =============== */
+
+.host-section {
+  padding: 0 20px 120px;
+
+  background: #140022;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.host-card {
+  max-width: 1200px;
+  margin: auto;
+  background: #230046;
+  border-radius: 22px;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.host-image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-content h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.host-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+}
+
+.host-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.host-socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1a002e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.host-socials img {
+  width: 16px;
+}
+
 /* =================MOBILE RESPONSIVE (576PX)================= */
 
 @media screen and (max-width: 576px) {
@@ -466,5 +532,25 @@ header {
 
   .episode-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* ============ Host Section =============== */
+  .section-title {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+  }
+
+  .host-content p {
+    max-width: 100%;
+  }
+
+  .host-socials {
+    justify-content: center;
   }
 }
