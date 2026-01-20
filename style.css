@@ -427,6 +427,64 @@ header {
   width: 16px;
 }
 
+/* =============== Footer Section ================ */
+
+.site-footer {
+  padding: 80px 16px 60px;
+
+  background-image: url("assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 400px;
+  height: 60px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
 /* =================MOBILE RESPONSIVE (576PX)================= */
 
 @media screen and (max-width: 576px) {
@@ -552,5 +610,23 @@ header {
 
   .host-socials {
     justify-content: center;
+  }
+
+  /* ============== Footer Section ============== */
+  .site-footer {
+    padding: 60px 16px 50px;
+    background-position: center 45%;
+  }
+
+  .footer-logo {
+    font-size: 34px;
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
   }
 }
